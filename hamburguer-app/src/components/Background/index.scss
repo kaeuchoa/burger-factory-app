@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,300&display=swap');
+
 *{
     margin: 0;
-    font-family: 'Poppins';  
+    font-family: 'Poppins'; 
+    overflow-y:hidden; 
 }
 .container{
     display:flex;
     .hamburguerArea{
         height: 100vh;
         width: 50%;
-        img{
+        .hamburguerImg{
         width: 400px;
         margin-left: 10em;
         height: 100%;
@@ -20,4 +22,11 @@
             font-weight: normal;
         }
     }   
-}   
+} 
+body{
+    overflow-y:hidden;
+    background:  url('../img/Icon\ awesome-hamburger.svg') no-repeat bottom;
+    background-size: 900px;
+    background-position-x: 45em;
+    background-position-y: 4em;
+}  

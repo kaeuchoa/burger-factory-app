@@ -2,6 +2,7 @@
 * {
   margin: 0;
   font-family: 'Poppins';
+  overflow-y: hidden;
 }
 
 .container {
@@ -15,7 +16,7 @@
   width: 50%;
 }
 
-.container .hamburguerArea img {
+.container .hamburguerArea .hamburguerImg {
   width: 400px;
   margin-left: 10em;
   height: 100%;
@@ -26,5 +27,13 @@
   margin-left: 6.6em;
   margin-top: 5.5em;
   font-weight: normal;
+}
+
+body {
+  overflow-y: hidden;
+  background: url("../img/Icon awesome-hamburger.svg") no-repeat bottom;
+  background-size: 900px;
+  background-position-x: 45em;
+  background-position-y: 4em;
 }
 /*# sourceMappingURL=index.css.map */
