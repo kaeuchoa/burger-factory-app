@@ -15,6 +15,8 @@ header li {
   list-style-type: none;
   padding: 0 .5em;
   margin-right: 1.2em;
+  -webkit-transition: ease .2s;
+  transition: ease .2s;
 }
 
 header li:hover {
