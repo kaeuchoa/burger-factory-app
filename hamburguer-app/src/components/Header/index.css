@@ -9,7 +9,8 @@ header {
 
 header li {
   font-size: 1.25em;
-  color: white;
+  font-weight: normal;
+  color: #fff;
   cursor: pointer;
   list-style-type: none;
   padding: 0 .5em;
@@ -28,9 +29,8 @@ header ul {
   margin-top: 3px;
 }
 
-header .HamburguerIcon {
-  padding: .4em 1em;
+header img {
+  padding: .2em 1em;
   width: 2.5em;
-  height: auto;
 }
 /*# sourceMappingURL=index.css.map */

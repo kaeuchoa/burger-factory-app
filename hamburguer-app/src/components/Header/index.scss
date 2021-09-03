@@ -5,7 +5,8 @@ header{
     height: 2em;
     li{
         font-size: 1.25em;
-        color: white;
+        font-weight: normal;
+        color: #fff;
         cursor: pointer;
         list-style-type: none;
         padding: 0 .5em;
@@ -19,10 +20,9 @@ header{
         margin: 0;
         margin-top:3px;
     }
-    .HamburguerIcon{
-        padding: .4em 1em;
+    img{
+        padding: .2em 1em;
         width: 2.5em;
-        height: auto;
     }
     //buscar como fazer o icone ficar ajustado no header e ajeitar os botoes que estao sempre 'bold'
     //Icone:video mostra como fazer a div se ajustar a div pai
