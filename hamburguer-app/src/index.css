@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;700&display=swap");
+* {
+  margin: 0;
+  font-family: 'Poppins';
+  overflow-y: hidden;
+}
+body {
+    overflow-y: hidden;
+    background: url("./components/img/Icon\ awesome-hamburger.svg") no-repeat bottom;
+    background-size: 900px;
+    background-position-x: 45em;
+    background-position-y: 4em;
+  }
