@@ -11,7 +11,4 @@ export default ()=>
             <h2>Big Burguer</h2>
             <img className='hamburguerImg' src={HamburguerImg} alt="imagem do Big Burguer" />  
         </div>
-        <div>
-           
-        </div>
     </div>
