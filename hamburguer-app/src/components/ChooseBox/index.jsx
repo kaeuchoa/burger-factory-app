@@ -1,13 +1,11 @@
 import React from 'react'
 import './index.css'
+import ChooseSection from './ChooseSection'
 
 export default ()=>
     <div className='container'>
         <div className="boxContainer">
-            <div className="chooseSection">Carne</div>
-            <div className="chooseSection">Salada</div>
-            <div className="chooseSection">Sobremesa</div>
-            <div className="chooseSection">Acompanhamento</div>
+            
         </div>
-        <button>Send</button>
+        <button className='sendButton'>Send</button>
     </div>
