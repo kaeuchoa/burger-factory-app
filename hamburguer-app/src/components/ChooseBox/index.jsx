@@ -3,9 +3,9 @@ import './index.css'
 import ChooseSection from './ChooseSection'
 
 export default ()=>
-    <div className='container'>
-        <div className="boxContainer">
-            <ChooseSection></ChooseSection>
+    <div className='containerBox'>
+        <div className="chooseContainer">
+            {/* <ChooseSection></ChooseSection> */}
         </div>
-        <button className='sendButton'>Send</button>
+        <button className='sendButton'>Finalizado</button>
     </div>
