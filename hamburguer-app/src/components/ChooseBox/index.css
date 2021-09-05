@@ -22,5 +22,11 @@
   margin-top: .8em;
   padding: .2em 1em;
   cursor: pointer;
+  -webkit-transition: ease .2s;
+  transition: ease .2s;
+}
+
+.containerBox .sendButton:hover {
+  background-color: #CCCCCC;
 }
 /*# sourceMappingURL=index.css.map */
