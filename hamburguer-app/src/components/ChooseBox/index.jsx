@@ -2,10 +2,6 @@ import React from 'react'
 import './index.css'
 import ChooseSection from './ChooseSection'
 
-// function ChooseBox(props) {
-//     return ()
-// }
-
 const ChooseBox = (props) => {
     console.log(props)
     const list = props.productsList
@@ -15,7 +11,7 @@ const ChooseBox = (props) => {
             <div className="chooseContainer">
                 {list.map((product) => {
                     return <ChooseSection product={product} key={product.id} />
-                })}
+                })} 
             </div>
             <button className='sendButton'>Finalizado</button>
         </div>
