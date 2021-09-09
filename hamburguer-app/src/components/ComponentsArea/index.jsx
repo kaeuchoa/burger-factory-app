@@ -3,6 +3,27 @@ import ChooseBox from '../ChooseBox'
 import HamburguerImg from '../HamburguerImg'
 import './index.css'
 
+const fetchOptionsList = ()=>{
+  const optionsList = [
+    {
+      name:'Carne',
+      id:0
+    },
+    {
+      name:'Adicionais',
+      id:1
+    },
+    {
+      name:'Molhos',
+      id:2
+    },
+    {
+      name:'Bebidas',
+      id:3
+    },
+  ]
+  return optionsList
+}
 const fetchProductsList = () => {
   // mock
   const productsList = [
@@ -38,14 +59,15 @@ const fetchProductsList = () => {
 const ComponentsArea= (props) => {
 
   const list = fetchProductsList()
+  const options = fetchOptionsList()
 
   return (
     <div className='container'>
     <div className="hamburguerArea">
-      <HamburguerImg></HamburguerImg>
+      <HamburguerImg/>
     </div>
     <div className="ChooseBox">
-      <ChooseBox productsList={list}></ChooseBox>
+      <ChooseBox productsList={options}/>
     </div>
     </div>
   )

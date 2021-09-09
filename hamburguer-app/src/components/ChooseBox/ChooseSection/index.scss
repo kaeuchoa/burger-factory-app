@@ -1,0 +1,12 @@
+.optionsName{
+    margin: 1em;
+    padding: .2em 0;
+    color: #707070;
+    font-size: 1.2em;
+    font-weight: 300;
+    cursor: pointer;
+    transition: ease .2s;
+}
+.optionsName:hover{
+    font-weight: bold;
+}

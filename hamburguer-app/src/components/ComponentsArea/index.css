@@ -8,4 +8,9 @@
   height: 100vh;
   width: 50%;
 }
+
+.container .ChooseBox {
+  width: 50%;
+  font-weight: 300;
+}
 /*# sourceMappingURL=index.css.map */
