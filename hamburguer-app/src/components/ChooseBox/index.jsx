@@ -1,15 +1,16 @@
 import React from 'react'
 import './index.css'
 import ChooseSection from './ChooseSection'
+import Options from './ChooseSection/Options'
 
 const ChooseBox = (props) => {
-    console.log(props)
-    const list = props.productsList
+    const productsList = props.productsList
+    const optionsList = props.optionsList
 
     return (
         <div className='containerBox'>
             <div className="chooseContainer">
-                {list.map((product) => {
+                {productsList.map((product) => {
                     return <ChooseSection product={product} key={product.id} />
                 })} 
             </div>

@@ -58,8 +58,8 @@ const fetchProductsList = () => {
 
 const ComponentsArea= (props) => {
 
-  const list = fetchProductsList()
-  const options = fetchOptionsList()
+  const options = fetchProductsList()
+  const products = fetchOptionsList()
 
   return (
     <div className='container'>
@@ -67,7 +67,7 @@ const ComponentsArea= (props) => {
       <HamburguerImg/>
     </div>
     <div className="ChooseBox">
-      <ChooseBox productsList={options}/>
+      <ChooseBox productsList={products} optionsList={options}/>
     </div>
     </div>
   )
