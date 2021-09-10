@@ -1,6 +1,6 @@
 import React from 'react'
 import './index.css'
-import Options from './Options'
+import Options from '../ProductsSection'
 const ChooseSection = (props)=>{
     const options = props.options
 
