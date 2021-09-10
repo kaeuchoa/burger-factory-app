@@ -26,7 +26,7 @@ const fetchOptionsList = ()=>{
 }
 const fetchProductsList = () => {
   // mock
-  const productsList = [
+  const extraList = [
     {
       price: 2.0,
       supply: 10,
@@ -45,15 +45,51 @@ const fetchProductsList = () => {
       name: 'Salada',
       id: 2
     },
+  ]
+  const meatList = [
     {
-      price: 0.5,
+      price: 5.0,
       supply: 10,
-      name: 'Molho',
-      id: 3
+      name: 'Bolvino',
+      id: 0
+    },
+    {
+      price: 7.5,
+      supply: 15,
+      name: 'Vegetariano',
+      id: 1
+    },
+  ]
+  const drinkList = [
+    {
+      price: 6.0,
+      supply: 10,
+      name: 'Suco',
+      id: 0
+    },
+    {
+      price: 4.5,
+      supply: 18,
+      name: 'Refrigerante',
+      id: 1
+    },
+  ]
+  const molhoList = [
+    {
+      price: 1.0,
+      supply: 15,
+      name: 'Barbecue',
+      id: 0
+    },
+    {
+      price: 1.5,
+      supply: 20,
+      name: 'Cheedar',
+      id: 1
     },
   ]
   
-  return productsList
+  return molhoList,drinkList,meatList,extraList
 }
 
 const ComponentsArea= (props) => {
