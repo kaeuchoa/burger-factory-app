@@ -10,8 +10,11 @@ const ChooseBox = (props) => {
     return (
         <div className='containerBox'>
             <div className="chooseContainer">
-                {productsList.map((product) => {
-                    return <ChooseSection product={product} key={product.id} />
+                {/* {productsList.map((product) => {
+                    return <ChooseSection key={product.id} />
+                })}  */}
+                {optionsList.map((options) => {
+                    return <ChooseSection options={options} key={options.id} />
                 })} 
             </div>
             <button className='sendButton'>Finalizado</button>

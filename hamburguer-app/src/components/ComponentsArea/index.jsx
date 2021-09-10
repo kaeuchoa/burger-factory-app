@@ -58,8 +58,8 @@ const fetchProductsList = () => {
 
 const ComponentsArea= (props) => {
 
-  const options = fetchProductsList()
-  const products = fetchOptionsList()
+  const options = fetchOptionsList()
+  const products = fetchProductsList()
 
   return (
     <div className='container'>
