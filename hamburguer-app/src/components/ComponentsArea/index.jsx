@@ -88,23 +88,22 @@ const fetchProductsList = () => {
       id: 1
     },
   ]
-  
-  return molhoList,drinkList,meatList,extraList
+  const all = [molhoList,drinkList,meatList,extraList]
+  return all
 }
 
 const ComponentsArea= (props) => {
 
   const options = fetchOptionsList()
   const products = fetchProductsList()
-
   return (
     <div className='container'>
-    <div className="hamburguerArea">
-      <HamburguerImg/>
-    </div>
-    <div className="ChooseBox">
-      <ChooseBox productsList={products} optionsList={options}/>
-    </div>
+      <div className="hamburguerArea">
+        <HamburguerImg/>
+      </div>
+      <div className="ChooseBox">
+        <ChooseBox productsList={products} optionsList={options}/>
+      </div>
     </div>
   )
 }
