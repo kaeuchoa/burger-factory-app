@@ -29,4 +29,8 @@
 .containerBox .sendButton:hover {
   background-color: #CCCCCC;
 }
+
+.containerBox .containerProducts {
+  display: none;
+}
 /*# sourceMappingURL=index.css.map */
