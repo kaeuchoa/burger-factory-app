@@ -4,21 +4,16 @@ import ChooseSection from './ChooseSection'
 import ProductsSection from './ProductsSection'
 
 const ChooseBox = (props) => {
-    const optionsList = props.optionsList
-    const productsList = props.productsList
-    
+    // const optionsList = props.optionsList
+    // const productsList = props.productsList
+    // desestruturação de arrays e objetos ([], {})
+    //jsx -> html
     return (
         <div className='containerBox'>
             <div className="chooseContainer">
                 {optionsList.map((options) => {
-                    return <ChooseSection options={options} key={options.id} />
+                    return <ChooseSection options={options} key={options.id} products={productsList} />
                 })} 
-            </div>
-            
-            <div className="containerProducts">
-                {productsList[1].map((products) => {
-                    return  <ProductsSection products={products} key={products.id} />
-                })}
             </div>
             <button className='sendButton'>Finalizado</button>
         </div>
