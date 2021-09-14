@@ -1,0 +1,20 @@
+{
+  "options" : [
+    {
+      "name":"Carne",
+      "id":0
+    },
+  {
+      "name":"Molhos",
+      "id":2
+  },
+  {
+      "name":"Bebidas",
+      "id":3
+  },
+  {
+      "name":"Pão",
+      "id":4
+  }
+]
+}

@@ -1,11 +1,10 @@
 import React from 'react'
 import './index.css'
 import ChooseSection from './ChooseSection'
-import ProductsSection from './ProductsSection'
 
 const ChooseBox = (props) => {
-    // const optionsList = props.optionsList
-    // const productsList = props.productsList
+    const optionsList = props.optionsList
+    const productsList = props.productsList
     // desestruturação de arrays e objetos ([], {})
     //jsx -> html
     return (

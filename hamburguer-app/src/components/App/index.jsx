@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../Header'
 import ComponentsArea from '../ComponentsArea'
 
+// npx json-server --watch db.json
 const App = (props) =>{
     return (
         <>

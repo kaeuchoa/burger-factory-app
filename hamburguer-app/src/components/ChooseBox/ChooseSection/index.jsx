@@ -9,10 +9,9 @@ const ChooseSection = ({products, options})=>{
             <div className='optionsName'>
                 {options.name}
             </div>      
-            <div className="productsSection"> 
-                {props.children}
-                 <ProductsSection products={props.products}/>
-            </div> 
+            {/* <div className="productsSection">  */}
+                 {/* <ProductsSection products={products}/> */}
+            {/* </div>  */}
         </>
     )
 }

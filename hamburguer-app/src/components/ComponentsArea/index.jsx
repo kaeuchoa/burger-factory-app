@@ -1,29 +1,17 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import ChooseBox from '../ChooseBox'
 import HamburguerImg from '../HamburguerImg'
+import OptionsService from '../../services/OptionsService'
 import './index.css'
 
-const fetchOptionsList = ()=>{
-  const optionsList = [
-    {
-      name:'Carne',
-      id:0
-    },
-    {
-      name:'Adicionais',
-      id:1
-    },
-    {
-      name:'Molhos',
-      id:2
-    },
-    {
-      name:'Bebidas',
-      id:3
-    },
-  ]
-  return optionsList
-}
+// MVC -> uma classe representar os dados (model)
+//      -> a interface (view)
+//      -> ponte ou controlador (controller)
+
+// Services -> responsável por fazer requisição http
+
+// const fetchOptionsList = ()=>{
+  
 const fetchProductsList = () => {
   // mock
   const extraList = [
@@ -93,8 +81,15 @@ const fetchProductsList = () => {
 }
 
 const ComponentsArea= (props) => {
+  const optionsService = new OptionsService()
+  
+  const [ options, setOptions ] = useState([])
+  useEffect(() => {
+    optionsService.listAll().then(optionsObject => {
+      setOptions(optionsObject)
+    })
+  }, [])
 
-  const options = fetchOptionsList()
   const products = fetchProductsList()
   return (
     <div className='container'>
