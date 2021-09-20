@@ -1,14 +1,14 @@
 import React from 'react'
 
 const ProductsSection = (props)=>{
-    const productsList = props.products
-    console.log(productsList.name)//apesar de aparecer os valores no console, da erro
+    const productsMeatList = props.productsMeatList
+    // console. log(productsMeatList.name)
     return(
         <div>
             <button>+1</button>
             <input type="text" />
             <button>-1</button>
-            <strong>{productsList.name}</strong>
+           {/* / <strong>{productsMeatList.name}</strong> */}
         </div>
     )
 }

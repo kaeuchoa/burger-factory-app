@@ -1,5 +1,6 @@
 export default class OptionsService {
     URL = 'http://localhost:3000/options' 
+    meatURL = 'http://localhost:3000/productsMeatList' 
     // get
     listAll() {
         return fetch(this.URL, {
@@ -10,7 +11,14 @@ export default class OptionsService {
             return response.json()
         })
     }
-    // post
-    // put 
-    // delete
+    productsMeatList(){
+        return fetch(this.meatURL, {
+            methid:'GET',
+            'Content-Type': 'application/json'
+        })
+        .then(response =>{
+            return response.json()
+        })
+    }
+    // post, put , delete
 }   

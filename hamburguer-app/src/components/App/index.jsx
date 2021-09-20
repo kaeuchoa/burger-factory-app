@@ -6,6 +6,7 @@ import ComponentsArea from '../ComponentsArea'
 const App = (props) =>{
     return (
         <>
+    
         <Header></Header>
         <ComponentsArea></ComponentsArea>
         </>
