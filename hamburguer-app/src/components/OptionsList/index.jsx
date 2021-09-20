@@ -1,21 +1,19 @@
 import React from 'react'
 import './index.css'
-import ChooseSection from './ChooseSection'
+import Option from './Option'
 
-const ChooseBox = (props) => {
-    const optionsList = props.optionsList
-    const productsList = props.productsList
+const OptionsList = ({optionsList}) => {
     // desestruturação de arrays e objetos ([], {})
     //jsx -> html
     return (
         <div className='containerBox'>
             <div className="chooseContainer">
-                {optionsList.map((options) => {
-                    return <ChooseSection options={options} key={options.id} products={productsList} />
+                {optionsList.map((option) => {
+                    return <Option key={option.id} products={option.products} />
                 })} 
             </div>
             <button className='sendButton'>Finalizado</button>
         </div>
     )
 }
-export default ChooseBox
+export default OptionsList
