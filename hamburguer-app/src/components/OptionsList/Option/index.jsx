@@ -11,7 +11,7 @@ const Option = (props)=>{
                 {/* {props.options.name} */}
             </div>      
             <div className="productsSection"> 
-                 <ProductsSection products={{}}/>
+                 <ProductsSection products={props.products}/>
             </div> 
         </>
     )
