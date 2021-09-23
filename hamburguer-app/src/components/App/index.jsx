@@ -15,13 +15,6 @@ const App = (props) =>{
         })
     }, [])
 
-    // const [ productsMeatList, setMeatList ] = useState([])
-    // useEffect(() => {
-    //     optionsService.productsMeatList().then(productsObjects =>{
-    //         console.log(productsMeatList)
-    //         setMeatList(productsObjects)
-    //     })
-    // }, [])
     return (
         <>
         <Header></Header>
@@ -30,7 +23,7 @@ const App = (props) =>{
                 <HamburguerImg/>
             </div>
             {/* Todo: mudar className */}
-            <div className="ChooseBox">
+            <div className="options">
                 <OptionsList optionsList={options}/>
             </div>
         </main>

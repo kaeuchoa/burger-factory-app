@@ -3,8 +3,6 @@ import './index.css'
 import Option from './Option'
 
 const OptionsList = ({optionsList}) => {
-    // desestruturação de arrays e objetos ([], {})
-    //jsx -> html
     return (
         <div className='containerBox'>
             <div className="chooseContainer">
