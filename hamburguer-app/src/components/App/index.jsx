@@ -24,7 +24,6 @@ const App = (props) =>{
             </div>
             {/* Todo: mudar className */}
             <div className="options">
-                {/* {console.log(options)} */}
                 <OptionsList optionsList={options}/>
             </div>
         </main>

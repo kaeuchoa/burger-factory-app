@@ -1,0 +1,18 @@
+.container {
+  padding-left: 2em;
+  display: none;
+}
+
+.container input {
+  width: 20px;
+  border: none;
+}
+
+.container button {
+  margin: 0 .2em;
+  border: none;
+  border-radius: .2em;
+  background-color: #CCCCCC;
+  cursor: pointer;
+}
+/*# sourceMappingURL=products.css.map */

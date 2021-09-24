@@ -1,13 +1,16 @@
 import React from 'react'
-
+import './products.css'
 const ProductsSection = (props)=>{
-    // console. log(productsMeatList.name)
+    console. log(props)
     return(
-        <div>
+        <div className='container'>
             <button>+1</button>
             <input type="text" />
             <button>-1</button>
-           {/* / <strong>{productsMeatList.name}</strong> */}
+            {props.products.map((products)=>{
+                return products.name
+            })}
+            {/* {props.products[1].name} */}
         </div>
     )
 }
