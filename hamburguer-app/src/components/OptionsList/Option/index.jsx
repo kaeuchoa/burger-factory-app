@@ -4,15 +4,15 @@ import ProductsSection from '../ProductsSection'
 
 const Option = (props)=>{
     // para abrir e fechar(mudar a classe css), usar o state
-    console.log(props,"Option")
+    console.log(props)
     return(
         <>
             <div className='optionsName'>
-                {/* {props.options.name} */}
+                {props.optionsName}
             </div>      
-            <div className="productsSection"> 
+            {/* <div className="productsSection"> 
                  <ProductsSection products={props.products}/>
-            </div> 
+            </div>  */}
         </>
     )
 }

@@ -3,7 +3,7 @@ import Header from '../Header'
 import HamburguerImg from '../HamburguerImg'
 import OptionsService from '../../services/OptionsService'
 import OptionsList from '../OptionsList'
-
+import './index.css'    
 // npx json-server --watch db.json
 const App = (props) =>{
     const optionsService = new OptionsService()
@@ -24,6 +24,7 @@ const App = (props) =>{
             </div>
             {/* Todo: mudar className */}
             <div className="options">
+                {/* {console.log(options)} */}
                 <OptionsList optionsList={options}/>
             </div>
         </main>
