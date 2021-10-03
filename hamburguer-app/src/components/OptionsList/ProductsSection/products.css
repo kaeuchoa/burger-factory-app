@@ -1,18 +1,26 @@
-.container {
+.containerProducts {
+  padding: .3em;
   padding-left: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   display: none;
 }
 
-.container input {
+.containerProducts input {
   width: 20px;
   border: none;
 }
 
-.container button {
+.containerProducts button {
   margin: 0 .2em;
   border: none;
   border-radius: .2em;
   background-color: #CCCCCC;
   cursor: pointer;
+}
+
+.containerProducts p {
+  color: #707070;
 }
 /*# sourceMappingURL=products.css.map */

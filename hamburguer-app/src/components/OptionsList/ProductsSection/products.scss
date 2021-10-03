@@ -1,8 +1,10 @@
-.container{
+.containerProducts{
+    padding: .3em;
     padding-left: 2em;
+    display: flex;
     input{
-    width: 20px;
-    border: none;
+        width: 20px;
+        border: none;
     }
     button{
         margin: 0 .2em;
@@ -11,5 +13,8 @@
         background-color: #CCCCCC;
         cursor: pointer;
     }
-    
+    p{
+        color: #707070;
+    }
+    display: none;
 }
