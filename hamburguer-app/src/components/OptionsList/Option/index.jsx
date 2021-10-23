@@ -4,7 +4,6 @@ import ProductsSection from '../ProductsSection'
 
 const Option = (props)=>{
     // para abrir e fechar(mudar a classe css), usar o state
-    console.log(props.productsx)
     return(
         <>
             <div className='optionsName'>
