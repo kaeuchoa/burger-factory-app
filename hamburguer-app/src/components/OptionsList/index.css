@@ -31,4 +31,8 @@
 .container .sendButton:hover {
   background-color: #CCCCCC;
 }
+
+.container .sendButton:active {
+  background-color: #959595;
+}
 /*# sourceMappingURL=index.css.map */

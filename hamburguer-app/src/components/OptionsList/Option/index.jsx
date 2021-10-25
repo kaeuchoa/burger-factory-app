@@ -11,6 +11,7 @@ const Option = (props)=>{
             </div>      
             <div className="productsSection"> 
                  <ProductsSection products={props.products}/>
+                 {console.log('entrou')}
             </div> 
         </>
     )

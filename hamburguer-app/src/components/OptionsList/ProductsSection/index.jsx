@@ -9,15 +9,14 @@ const ProductsSection = (props)=>{
         props.products.map((products)=>{
             return(
                 <div className='containerProducts'>
-                   
-                    <button>-1</button>
-                    <input type="text" />
+                    <button onClick={()=>setCount(count - 1)}>-1</button>
+                    <input type="text" value={count}/>
                     <button onClick={()=>setCount(count + 1)}>+1</button>
                     <p>{products.name}</p>
                 </div>
             )
         })
-    )
+    )   
 }
 
 export default ProductsSection
