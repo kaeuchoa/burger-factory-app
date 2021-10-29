@@ -5,7 +5,7 @@ import {useState} from 'react'
 
 const Option = (props)=>{
     // para abrir e fechar(mudar a classe css), usar o state
-    const [show, setShow] = useState(true)
+    const [show, setShow] = useState(false)
     
     function toggle() {
         setShow(show => !show);
@@ -13,8 +13,8 @@ const Option = (props)=>{
       console.log(show)
     return(
         <>
-            <div className='optionsName'>
-                <button onClick={toggle}>{props.optionsName}</button>
+            <div >
+                <button className='optionsName'onClick={toggle}>{props.optionsName}</button>
             </div>  
                
             <div className="productsSection">
