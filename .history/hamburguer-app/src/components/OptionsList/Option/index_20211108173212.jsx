@@ -1,8 +1,9 @@
 import React, {useState} from 'react'
 import './index.css'
-import Products from '../Products'
 
+import Products from '..Products/Products'
 
+import ProductsSection from '../ProductsSection'
 
 
 const Option = (props)=>{

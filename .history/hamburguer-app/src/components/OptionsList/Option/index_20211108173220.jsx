@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import './index.css'
 import Products from '../Products'
 
-
+import ProductsSection from '../ProductsSection'
 
 
 const Option = (props)=>{

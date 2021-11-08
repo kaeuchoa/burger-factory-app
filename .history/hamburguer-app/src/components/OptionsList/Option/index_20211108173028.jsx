@@ -1,8 +1,7 @@
 import React, {useState} from 'react'
 import './index.css'
-import Products from '../Products'
-
-
+import ProductsSection from '../ProductsSection'
+import Products from './Products'
 
 
 const Option = (props)=>{
@@ -27,7 +26,8 @@ const Option = (props)=>{
             </div>  
                
             <div className="productsSection">
-                {renderProducts()} 
+                {renderProducts()
+                } 
             </div> 
         </>
     )

@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import './index.css'
-import Products from '../Products'
-
+import ProductsSection from '../ProductsSection'
+import Products from './'
 
 
 
@@ -12,13 +12,6 @@ const Option = (props)=>{
     function toggle() {
         setShow(show => !show);
     }
-    function renderProducts(){
-
-       return show? props.products.map((product)=> <Products name={product.name}/>) :null
-    }
-        
-
-
       console.log(show)
     return(
         <>
@@ -27,7 +20,9 @@ const Option = (props)=>{
             </div>  
                
             <div className="productsSection">
-                {renderProducts()} 
+                {
+                    show?<ProductsSection products={props.products}/> :null
+                } 
             </div> 
         </>
     )
