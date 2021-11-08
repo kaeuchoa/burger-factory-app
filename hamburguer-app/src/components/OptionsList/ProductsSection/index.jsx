@@ -8,7 +8,7 @@ const ProductsSection = (props)=>{
     return(
         props.products.map((products)=>{
             return(
-                <div className='containerProducts' >
+                <div className='containerProducts'>
                     <button onClick={()=>setCount(count - 1)}>-1</button>
                     <input type="text" value={count}/>
                     <button onClick={()=>setCount(count + 1)}>+1</button>

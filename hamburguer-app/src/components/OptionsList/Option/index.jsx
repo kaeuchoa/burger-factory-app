@@ -21,7 +21,6 @@ const Option = (props)=>{
                 {
                     show?<ProductsSection products={props.products}/> :null
                 } 
-                 
             </div> 
         </>
     )
