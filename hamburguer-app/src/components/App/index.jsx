@@ -17,7 +17,7 @@ const App = (props) => {
         })
     }, [])
     const [count, setCount] = useState(0);
-
+    //O count ta armazenando a contagem para todos 
     return (
         <OptionsData.Provider value={{ options, count, setCount }}>
             <Header />

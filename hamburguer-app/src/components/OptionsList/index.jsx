@@ -4,15 +4,14 @@ import Option from './Option'
 import { OptionsData } from '../../OptionsData'
 
 const OptionsList = () => {
-    const { options } = useContext(OptionsData)
-    console.log(options)
-    
+    const { options, count, setCount } = useContext(OptionsData)
+
     return (
         <div className="container">
             <div className='containerBox'>
                 <div className="chooseContainer">
                     {options.map((option) => {
-                        return <Option key={option.id} optionsName={option.name} products={option.products} />
+                        return <Option count={count} setCount={setCount} key={option.id} optionsName={option.name} products={option.products} />
                     })}
                 </div>
                 <button className='sendButton'>Finalizado</button>

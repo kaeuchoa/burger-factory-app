@@ -3,8 +3,8 @@ import './index.css'
 import { OptionsData } from '../../../OptionsData'
 
 const Products = (props) => {
-    // const [count, setCount] = useState(0);
     const { count, setCount } = useContext(OptionsData)
+
     function decrementCount() {
         if (count > 0) {
             setCount(count - 1)
