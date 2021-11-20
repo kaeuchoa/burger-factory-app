@@ -1,10 +1,10 @@
 import React, { useContext, useState } from 'react'
 import './index.css'
 import Option from './Option'
-import { CounterProducts } from '../../CounterProducts'
+import { OptionsData } from '../../OptionsData'
 
 const OptionsList = () => {
-    const { options } = useContext(CounterProducts)
+    const { options } = useContext(OptionsData)
     console.log(options)
     
     return (
