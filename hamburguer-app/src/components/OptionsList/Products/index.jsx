@@ -1,9 +1,9 @@
-import React, { useContext } from 'react'
-import './index.css'
+import React, { useState } from 'react'
 import { OptionsData } from '../../../OptionsData'
+import './index.css'
 
 const Products = (props) => {
-    const { count, setCount } = useContext(OptionsData)
+    const [count, setCount] = useState(0);
 
     function decrementCount() {
         if (count > 0) {
@@ -16,12 +16,14 @@ const Products = (props) => {
         }
     }
     return (
-        <div className='containerProducts'>
-            <button onClick={decrementCount}>-1</button>
-            <input type="text" value={count} />
-            <button onClick={incrementCount}>+1</button>
-            <p>{props.name}</p>
-        </div>
+        <OptionsData.Provider value={{ count, setCount }}>
+            <div className='containerProducts'>
+                <button onClick={decrementCount}>-1</button>
+                <input type="text" value={count} />
+                <button onClick={incrementCount}>+1</button>
+                <p>{props.name}</p>
+            </div>
+        </OptionsData.Provider>
     )
 }
 export default Products
