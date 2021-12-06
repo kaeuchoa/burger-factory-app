@@ -4,11 +4,13 @@ import Header from '../Header'
 import HamburguerImg from '../HamburguerImg'
 import OptionsService from '../../services/OptionsService'
 import { OptionsData } from '../../OptionsData'
+import { ProductsData } from '../../ProductsDataContext'
 import './index.css'
 
 // npx json-server --watch db.json
 const App = (props) => {
     const optionsService = new OptionsService()
+    const { count } = new useContext(ProductsData)
 
     const [options, setOptions] = useState([])
     useEffect(() => {
@@ -16,7 +18,6 @@ const App = (props) => {
             setOptions(optionsObject)
         })
     }, [])
-    //O count ta armazenando a contagem para todos 
 
     return (
         <OptionsData.Provider value={{ options }}>

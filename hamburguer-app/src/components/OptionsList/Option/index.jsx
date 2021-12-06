@@ -2,6 +2,7 @@ import React, { useState, useContext } from 'react'
 import './index.css'
 import Products from '../Products'
 import { OptionsData } from '../../../OptionsData'
+import ProductsDataProvider from '../../../ProductsDataContext'
 
 const Option = (props) => {
     // para abrir e fechar(mudar a classe css), usar o state
@@ -11,11 +12,11 @@ const Option = (props) => {
         setShow(show => !show);
     }
     function renderProducts() {
-        return show ? props.products.map((product) => <Products count={props.count} setCount={props.setCount} name={product.name} />) : null
+        return show ? props.products.map((product) => <Products name={product.name} />) : null
     }
 
     return (
-        <>
+        <ProductsDataProvider>
             <div >
                 <button className='optionsName' onClick={toggle}>{props.optionsName}</button>
             </div>
@@ -23,7 +24,7 @@ const Option = (props) => {
             <div className="productsSection">
                 {renderProducts()}
             </div>
-        </>
+        </ProductsDataProvider>
     )
 }
 
