@@ -1,0 +1,107 @@
+{
+  "options": [
+    {
+      "name": "Carne",
+      "id": 0,
+      "products": [
+        {
+          "price": 5,
+          "supply": 10,
+          "name": "Bolvino",
+          "id": 1
+        },
+        {
+          "price": 7.5,
+          "supply": 15,
+          "name": "Vegetariano",
+          "id": 2
+        }
+      ]
+    },
+    {
+      "name": "Bebidas",
+      "id": 4,
+      "products": [
+        {
+          "price": 6,
+          "supply": 10,
+          "name": "Suco",
+          "id": 5
+        },
+        {
+          "price": 4.5,
+          "supply": 18,
+          "name": "Refrigerante",
+          "id": 6
+        }
+      ]
+    },
+    {
+      "name": "Molhos",
+      "id": 7,
+      "products": [
+        {
+          "price": 1,
+          "supply": 15,
+          "name": "Barbecue",
+          "id": 8
+        },
+        {
+          "price": 1.5,
+          "supply": 20,
+          "name": "Cheedar",
+          "id": 9
+        }
+      ]
+    },
+    {
+      "name": "Pão",
+      "id": 10,
+      "products": [
+        {
+          "price": 2,
+          "supply": 25,
+          "name": "Branco",
+          "id": 11
+        },
+        {
+          "price": 3.5,
+          "supply": 20,
+          "name": "Integral",
+          "id": 12
+        }
+      ]
+    },
+    {
+      "name": "Extra",
+      "id": 14,
+      "products": [
+        {
+          "price": 1,
+          "supply": 15,
+          "name": "Queijo",
+          "id": 15
+        },
+        {
+          "price": 2,
+          "supply": 20,
+          "name": "Salada",
+          "id": 16
+        },
+        {
+          "price": 1,
+          "supply": 12,
+          "name": "ovo",
+          "id": 17
+        }
+      ]
+    }
+    {,
+      "title": "React POST Request Example",
+      "id": 15
+    }
+  ],
+  "finishOrder": [
+    {}
+  ]
+}
