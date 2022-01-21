@@ -34,7 +34,7 @@ const OptionsList = () => {
   const [isConfirmed, setIsConfirmed] = useState(false);
 
   const confirmHandler = (confirm) => {
-      console.log(confirm)
+      console.log()
     return setIsConfirmed(confirm);
   };
   return (

@@ -32,10 +32,8 @@ const OptionsList = () => {
     // mostrar  o preço individual de cada produto
   };
   const [isConfirmed, setIsConfirmed] = useState(false);
-
-  const confirmHandler = (confirm) => {
-      console.log(confirm)
-    return setIsConfirmed(confirm);
+  const confirmHandler = (isConfirmed) => {
+    return setC
   };
   return (
     <div className="container">
@@ -54,11 +52,7 @@ const OptionsList = () => {
         <button className="sendButton" onClick={onClickHandler}>
           Finalizado
         </button>
-        {!isConfirmed ? (
-          <ConfirmPage order={OrderDetails} confirmRequest={confirmHandler} />
-        ) : (
-          ""
-        )}
+        {<ConfirmPage order={OrderDetails} />}
       </div>
     </div>
   );

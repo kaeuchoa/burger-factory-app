@@ -34,8 +34,7 @@ const OptionsList = () => {
   const [isConfirmed, setIsConfirmed] = useState(false);
 
   const confirmHandler = (confirm) => {
-      console.log(confirm)
-    return setIsConfirmed(confirm);
+    return setIsConfirmed(confirm)
   };
   return (
     <div className="container">
@@ -54,11 +53,7 @@ const OptionsList = () => {
         <button className="sendButton" onClick={onClickHandler}>
           Finalizado
         </button>
-        {!isConfirmed ? (
-          <ConfirmPage order={OrderDetails} confirmRequest={confirmHandler} />
-        ) : (
-          ""
-        )}
+        {!isConfirmed :<ConfirmPage order={OrderDetails} />}
       </div>
     </div>
   );

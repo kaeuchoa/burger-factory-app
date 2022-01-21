@@ -22,7 +22,7 @@ const OptionsList = () => {
       headers: { "Content-type": "application/json" },
       body: JSON.stringify(productsCount),
     }).then(() => {
-      //   console.log(productsCount); //Pedido finalizado
+    //   console.log(productsCount); //Pedido finalizado
     });
 
     // criar um serviço novo
@@ -32,11 +32,7 @@ const OptionsList = () => {
     // mostrar  o preço individual de cada produto
   };
   const [isConfirmed, setIsConfirmed] = useState(false);
-
-  const confirmHandler = (confirm) => {
-      console.log(confirm)
-    return setIsConfirmed(confirm);
-  };
+  
   return (
     <div className="container">
       <div className="containerBox">
@@ -54,11 +50,7 @@ const OptionsList = () => {
         <button className="sendButton" onClick={onClickHandler}>
           Finalizado
         </button>
-        {!isConfirmed ? (
-          <ConfirmPage order={OrderDetails} confirmRequest={confirmHandler} />
-        ) : (
-          ""
-        )}
+        {<ConfirmPage order={OrderDetails} />}
       </div>
     </div>
   );

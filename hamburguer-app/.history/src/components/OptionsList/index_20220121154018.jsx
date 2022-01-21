@@ -2,7 +2,7 @@ import React, { useState, useEffect, useContext } from "react";
 import "./index.css";
 import Option from "./Option";
 import OptionsService from "../../services/OptionsService";
-import ConfirmPage from "./ConfirmPage";
+import 
 import { OrderDetails } from "../../context/OrderDetails";
 
 const OptionsList = () => {
@@ -17,13 +17,14 @@ const OptionsList = () => {
   }, []);
 
   const onClickHandler = (e) => {
+    
     fetch("http://localhost:3000/finishOrder", {
-      method: "POST",
-      headers: { "Content-type": "application/json" },
-      body: JSON.stringify(productsCount),
-    }).then(() => {
-      //   console.log(productsCount); //Pedido finalizado
-    });
+        method: "POST",
+        headers: { "Content-type": "application/json" },
+        body: JSON.stringify(productsCount)
+    }).then(()=>{
+        console.log(productsCount); //Pedido finalizado
+    })
 
     // criar um serviço novo
     // enviar pro servidor
@@ -31,12 +32,7 @@ const OptionsList = () => {
     // opcional: criar um modal com o resumo do pedido
     // mostrar  o preço individual de cada produto
   };
-  const [isConfirmed, setIsConfirmed] = useState(false);
 
-  const confirmHandler = (confirm) => {
-      console.log(confirm)
-    return setIsConfirmed(confirm);
-  };
   return (
     <div className="container">
       <div className="containerBox">
@@ -54,11 +50,7 @@ const OptionsList = () => {
         <button className="sendButton" onClick={onClickHandler}>
           Finalizado
         </button>
-        {!isConfirmed ? (
-          <ConfirmPage order={OrderDetails} confirmRequest={confirmHandler} />
-        ) : (
-          ""
-        )}
+
       </div>
     </div>
   );
