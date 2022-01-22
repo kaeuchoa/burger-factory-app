@@ -5,10 +5,10 @@ import OptionsService from "../../services/OptionsService";
 import ConfirmPage from "./ConfirmPage";
 import { OrderDetails } from "../../context/OrderDetails";
 
-const OptionsList = () => {
+const OptionsList = (props) => {
   const optionsService = new OptionsService();
-
   const [options, setOptions] = useState([]);
+
   const { _, __, productsCount } = useContext(OrderDetails);
   useEffect(() => {
     optionsService.listAll().then((optionsObject) => {
@@ -31,12 +31,7 @@ const OptionsList = () => {
     // opcional: criar um modal com o resumo do pedido
     // mostrar  o preço individual de cada produto
   };
-  const [isConfirmed, setIsConfirmed] = useState(false);
 
-  const confirmHandler = (confirm) => {
-      console.log(confirm)
-    return setIsConfirmed(confirm);
-  };
   return (
     <div className="container">
       <div className="containerBox">
@@ -51,14 +46,9 @@ const OptionsList = () => {
             );
           })}
         </div>
-        <button className="sendButton" onClick={onClickHandler}>
+        <button className="sendButton" onClick={()=>props.confirmRequest(true)}>
           Finalizado
         </button>
-        {!isConfirmed ? (
-          <ConfirmPage order={OrderDetails} confirmRequest={confirmHandler} />
-        ) : (
-          ""
-        )}
       </div>
     </div>
   );
