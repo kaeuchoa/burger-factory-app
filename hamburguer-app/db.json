@@ -98,8 +98,16 @@
     }
   ],
   "finishOrder": [
-    [],
-    [],
+    [
+      {
+        "id": 1,
+        "count": 2
+      },
+      {
+        "id": 2,
+        "count": 2
+      }
+    ],
     [],
     [
       {
@@ -109,6 +117,38 @@
       {
         "id": 2,
         "count": 2
+      }
+    ],
+    [
+      {
+        "id": 1,
+        "count": 2
+      },
+      {
+        "id": 2,
+        "count": 2
+      }
+    ],
+    [
+      {
+        "id": 1,
+        "count": 1,
+        "name": "Bolvino"
+      },
+      {
+        "id": 2,
+        "count": 1,
+        "name": "Vegetariano"
+      },
+      {
+        "id": 5,
+        "count": 2,
+        "name": "Suco"
+      },
+      {
+        "id": 6,
+        "count": 2,
+        "name": "Refrigerante"
       }
     ]
   ]
