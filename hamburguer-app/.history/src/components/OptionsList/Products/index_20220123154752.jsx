@@ -6,15 +6,15 @@ const Products = (props) => {
   const { getProductById, updateProductById } = useContext(OrderDetails);
   let product = getProductById(props.id); // undefined -> count????
   product = product ? product : { id: props.id, count: 0, name: props.name, price: props.price};
-  
+
   function decrementCount() {
     if (product.count > 0) {
-      updateProductById(props.id, product.count - 1, props.name, props.price);
+      updateProductById(props.id, product.count - 1, props.name, pro);
     }
   }
   function incrementCount() {
     if (product.count < 2) {
-      updateProductById(props.id, product.count + 1, props.name, props.price);
+      updateProductById(props.id, product.count + 1, props.name);
     }
   }
   return (

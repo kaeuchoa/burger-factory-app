@@ -13,7 +13,7 @@ const updateProductCount = (id, newCount, productsCount,name,newPrice) => {
             id: id, // pares chave -> valor
             count: newCount,
             name: name,
-            price: newPrice,
+            
         })
     }
     return copyProductCount;

@@ -1,6 +1,6 @@
 import { createContext, useState } from "react"
 
-const updateProductCount = (id, newCount, productsCount,name,newPrice) => {
+const updateProductCount = (id, newCount, productsCount,name) => {
     const copyProductCount = [...productsCount]
     const productIndex = copyProductCount.findIndex((product)=>{ return product.id === id }) // se ela acha retorna o index se não, ela retorna -1
     
@@ -13,7 +13,6 @@ const updateProductCount = (id, newCount, productsCount,name,newPrice) => {
             id: id, // pares chave -> valor
             count: newCount,
             name: name,
-            price: newPrice,
         })
     }
     return copyProductCount;
@@ -29,7 +28,7 @@ const OrderDetailsProvider = (props) => {
     
     const [productsCount, setProductsCount] = useState([]);
     const updateProductById = (id, newCount, name, price) => {
-        const newProductsCount = updateProductCount(id, newCount, productsCount, name, price );
+        const newProductsCount = updateProductCount(id, newCount, productsCount, name );
         setProductsCount(newProductsCount);
     }
     const getProductById = (id) => {

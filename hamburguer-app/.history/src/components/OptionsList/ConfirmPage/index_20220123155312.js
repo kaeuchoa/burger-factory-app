@@ -28,7 +28,7 @@ const ConfirmPage = (props) => {
         <div className="order-section">
             {productsCount.map((products) => {
               // console.log(products)
-              return <OrderPreview name={products.name} count={products.count} price = {products.price}/>;
+              return <OrderPreview name={products.name} count={products.count} price = {}/>;
             })}
         </div>
         <div className="buttons-section">
