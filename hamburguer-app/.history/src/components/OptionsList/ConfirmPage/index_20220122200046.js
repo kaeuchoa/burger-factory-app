@@ -1,29 +1,20 @@
-import React , {useEffect, useContext}from "react";
-import { OrderDetails } from '../../../context/OrderDetails'
+import React from "react";
 import "./index.css";
 
 const ConfirmPage = (props) => {
-
-  const { _, __, productsCount } = useContext(OrderDetails);
-
   const onClickHandler = (e) => {
     fetch("http://localhost:3000/finishOrder", {
       method: "POST",
       headers: { "Content-type": "application/json" },
       body: JSON.stringify(productsCount),
     }).then(() => {
-      console.log(productsCount); //Pedido finalizado
+        console.log(productsCount); //Pedido finalizado
     });
 
-    // criar um serviço novo
-    // enviar pro servidor
-    // servidor vai retornar o valor total do pedido
-    // opcional: criar um modal com o resumo do pedido
-    // mostrar  o preço individual de cada produto
-  };
 
   return props.trigger ? (
     <div className="confirm-popup">
+      {console.log(props.trigger)}
       <div className="container">
         <div className="order-section"></div>
 
@@ -34,9 +25,7 @@ const ConfirmPage = (props) => {
           >
             cancelar
           </button>
-          <button className="confirm-button" onClick={() => onClickHandler()}>
-            Confimar
-          </button>
+          <button className="confirm-button" >Confimar</button>
         </div>
       </div>
     </div>

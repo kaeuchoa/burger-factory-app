@@ -15,16 +15,16 @@ const OptionsList = (props) => {
   }, []);
   
 
-  // const { _, __, productsCount } = useContext(OrderDetails);
-  // const onClickHandler = (e) => {
-  //   fetch("http://localhost:3000/finishOrder", {
-  //     method: "POST",
-  //     headers: { "Content-type": "application/json" },
-  //     body: JSON.stringify(productsCount),
-  //   }).then(() => {
-  //     console.log(productsCount); //Pedido finalizado
-  //   });
-  // };
+  const { _, __, productsCount } = useContext(OrderDetails);
+  const onClickHandler = (e) => {
+    fetch("http://localhost:3000/finishOrder", {
+      method: "POST",
+      headers: { "Content-type": "application/json" },
+      body: JSON.stringify(productsCount),
+    }).then(() => {
+      console.log(productsCount); //Pedido finalizado
+    });
+  };
 
   return (
     <div className="container">

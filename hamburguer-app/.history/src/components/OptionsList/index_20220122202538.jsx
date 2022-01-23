@@ -7,25 +7,32 @@ import { OrderDetails } from "../../context/OrderDetails";
 const OptionsList = (props) => {
   const optionsService = new OptionsService();
   const [options, setOptions] = useState([]);
-  
+
+  const { _, __, productsCount } = useContext(OrderDetails);
   useEffect(() => {
     optionsService.listAll().then((optionsObject) => {
       setOptions(optionsObject);
     });
   }, []);
+
+  const onClickHandler = (e) => {
+    fetch("http://localhost:3000/finishOrder", {
+      method: "POST",
+      headers: { "Content-type": "application/json" },
+      body: JSON.stringify(productsCount),
+    }).then(() => {
+        console.log(productsCount); //Pedido finalizado
+    });
+
+    // criar um serviço novo
+    // enviar pro servidor
+    // servidor vai retornar o valor total do pedido
+    // opcional: criar um modal com o resumo do pedido
+    // mostrar  o preço individual de cada produto
+  };
+
+
   
-
-  // const { _, __, productsCount } = useContext(OrderDetails);
-  // const onClickHandler = (e) => {
-  //   fetch("http://localhost:3000/finishOrder", {
-  //     method: "POST",
-  //     headers: { "Content-type": "application/json" },
-  //     body: JSON.stringify(productsCount),
-  //   }).then(() => {
-  //     console.log(productsCount); //Pedido finalizado
-  //   });
-  // };
-
   return (
     <div className="container">
       <div className="containerBox">
@@ -40,10 +47,7 @@ const OptionsList = (props) => {
             );
           })}
         </div>
-        <button
-          className="sendButton"
-          onClick={() => props.showConfirmRequest(true)}
-        >
+        <button className="sendButton" onClick={()=>props.showConfirmRequest(true)}>
           Finalizado
         </button>
       </div>

@@ -5,7 +5,7 @@ import "./index.css";
 const ConfirmPage = (props) => {
 
   const { _, __, productsCount } = useContext(OrderDetails);
-
+  
   const onClickHandler = (e) => {
     fetch("http://localhost:3000/finishOrder", {
       method: "POST",
@@ -34,7 +34,7 @@ const ConfirmPage = (props) => {
           >
             cancelar
           </button>
-          <button className="confirm-button" onClick={() => onClickHandler()}>
+          <button className="confirm-button" onClick={() => props.showConfirmRequest(false)}>
             Confimar
           </button>
         </div>

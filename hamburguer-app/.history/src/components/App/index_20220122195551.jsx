@@ -8,7 +8,7 @@ import { OrderDetailsProvider } from "../../context/OrderDetails";
 
 // npx json-server --watch db.json
 const App = (props) => {
-  const [showConfirmPage, setShowConfirmPage] = useState(false);
+  const [showConfirmPage, setshowConfirmPage] = useState(false);
 
   return (
     <div>
@@ -18,15 +18,12 @@ const App = (props) => {
           <HamburguerImg />
         </div>
         {/* Todo: mudar className */}
-        <OrderDetailsProvider>
-          <div className="options">
-            <OptionsList showConfirmRequest={setShowConfirmPage} />
-          </div>
-          <ConfirmPage
-            trigger={showConfirmPage}
-            showConfirmRequest={setShowConfirmPage}
-          />
-        </OrderDetailsProvider>
+        <div className="options">
+          <OrderDetailsProvider>
+            <OptionsList confirmRequest={setshowConfirmPage} />
+          </OrderDetailsProvider>
+        </div>
+          <ConfirmPage trigger={showConfirmPage} confirmRequest={setshowConfirmPage} />
       </main>
     </div>
   );

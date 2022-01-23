@@ -18,10 +18,10 @@ const App = (props) => {
           <HamburguerImg />
         </div>
         {/* Todo: mudar className */}
-        <OrderDetailsProvider>
-          <div className="options">
+        <div className="options">
+          <OrderDetailsProvider>
             <OptionsList showConfirmRequest={setShowConfirmPage} />
-          </div>
+        </div>
           <ConfirmPage
             trigger={showConfirmPage}
             showConfirmRequest={setShowConfirmPage}

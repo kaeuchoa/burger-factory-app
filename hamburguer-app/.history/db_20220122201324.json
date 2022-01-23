@@ -97,19 +97,5 @@
       ]
     }
   ],
-  "finishOrder": [
-    [],
-    [],
-    [],
-    [
-      {
-        "id": 1,
-        "count": 2
-      },
-      {
-        "id": 2,
-        "count": 2
-      }
-    ]
-  ]
+  "finishOrder": []
 }
