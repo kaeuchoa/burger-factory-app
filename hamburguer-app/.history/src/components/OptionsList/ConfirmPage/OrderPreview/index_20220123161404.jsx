@@ -6,7 +6,7 @@ const OrderPreview = (props) => {
   };
   // console.log(props.name)
   return (
-    <div className="confirmationSection">
+    <div className="">
       <div className="product name">{props.name}</div> 
       <div className="product count">x {props.count}</div>
       <div className="product total">: {showTotal()}R$</div>

@@ -1,0 +1,11 @@
+.container{
+    display: inline-block;
+    width: 100%;
+    
+    .product{
+        display: inline-block;
+        margin: 10px 15px 10px ;
+        font-weight: 700;
+        font-size: 22px;
+    }
+}

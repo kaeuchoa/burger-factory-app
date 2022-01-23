@@ -1,0 +1,21 @@
+.confirmationSection{
+    display: inline-block;
+    width: 100%;
+    height: 15%;
+    .product{
+        display: inline-block;
+        margin: 10px 15px 10px ;
+        font-weight: 700;
+        font-size: 22px;
+    }
+    .product .name{
+        width: 30%;
+    }
+    .product .count{
+        width: 30%;
+    }
+    .product .total{
+        width: 40%;
+        color: red;
+    }
+}

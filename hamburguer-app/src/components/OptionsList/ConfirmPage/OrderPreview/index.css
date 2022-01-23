@@ -1,0 +1,25 @@
+.confirmationSection {
+  display: inline-block;
+  width: 100%;
+  height: 15%;
+}
+
+.confirmationSection .product {
+  display: inline-block;
+  margin: 8px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.confirmationSection .product.name {
+  width: 40%;
+}
+
+.confirmationSection .product.count {
+  width: 10%;
+}
+
+.confirmationSection .product.total {
+  width: 25%;
+}
+/*# sourceMappingURL=index.css.map */
