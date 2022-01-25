@@ -11,24 +11,31 @@
   align-items: center;
 
   .confirm-section {
-    display: inline-block;
     width: 400px;
     height: 350px;
     background-color: #ECE8FF;
     border-radius: 1em;
+    border: 1em;
+    border-color: black;
   } 
-  .order-section {
+
+
+  .order-section{
+    background-color: blue;
     height: 80%;
-    width: 120%;
+  }
+  .order {
+    width: 100%;
     margin: 10px;
-    color: black;
-    overflow: scroll;
-    overflow-x: hidden;
+    color: black  ;
   }
 
   .buttons-section {
+    posi;
+    background-color: red;
     width: 100%;
     padding: 10px;
+    justify-content: space-between;
     margin-bottom: 10px;
     button {
       margin: 0 40px 0px 40px;
@@ -45,6 +52,7 @@
       font-size: 18px;
       width: 100px;
     }
+
     .cancel-button:hover {
       background-color: #b88989;
     }

@@ -16,7 +16,7 @@
           align-items: center;
 }
 
-.confirm-popup .container {
+.confirm-popup .confirm-section {
   display: inline-block;
   width: 400px;
   height: 350px;
@@ -26,17 +26,16 @@
 
 .confirm-popup .order-section {
   height: 80%;
-  width: 100%;
+  width: 120%;
   margin: 10px;
   color: black;
+  overflow: scroll;
+  overflow-x: hidden;
 }
 
 .confirm-popup .buttons-section {
   width: 100%;
   padding: 10px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   margin-bottom: 10px;
 }
 

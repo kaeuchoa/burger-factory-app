@@ -17,18 +17,21 @@
     background-color: #ECE8FF;
     border-radius: 1em;
   } 
-  .order-section {
+  .order-section{
+    background-color: black;
     height: 80%;
-    width: 120%;
-    margin: 10px;
-    color: black;
-    overflow: scroll;
-    overflow-x: hidden;
   }
-
+  .order {
+    width: 100%;
+    margin: 10px;
+    color: black  ;
+    border: 1em;
+    border-color: black;
+  }
   .buttons-section {
     width: 100%;
     padding: 10px;
+    justify-content: space-between;
     margin-bottom: 10px;
     button {
       margin: 0 40px 0px 40px;
@@ -45,6 +48,7 @@
       font-size: 18px;
       width: 100px;
     }
+
     .cancel-button:hover {
       background-color: #b88989;
     }

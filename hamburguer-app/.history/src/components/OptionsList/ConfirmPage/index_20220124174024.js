@@ -24,8 +24,9 @@ const ConfirmPage = (props) => {
 
   return props.trigger ? (
     <div className="confirm-popup">
-      <div className="confirm-section">
-        <div className="order-section">
+      
+      <div className="order-section"><div></div>
+        <div className="order">
             {productsCount.map((products) => {
               // console.log(products)
               return <OrderPreview name={products.name} count={products.count} price = {products.price}/>;

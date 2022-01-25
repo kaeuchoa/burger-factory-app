@@ -5,7 +5,7 @@ import "./index.css";
 
 const ConfirmPage = (props) => {
   const { _, __, productsCount } = useContext(OrderDetails);
-  
+
   const onClickHandler = (e) => {
     fetch("http://localhost:3000/finishOrder", {
       method: "POST",
@@ -24,23 +24,31 @@ const ConfirmPage = (props) => {
 
   return props.trigger ? (
     <div className="confirm-popup">
-      <div className="confirm-section">
-        <div className="order-section">
+      <div className="order-section">
+        <div>
+          <div className="order">
             {productsCount.map((products) => {
               // console.log(products)
-              return <OrderPreview name={products.name} count={products.count} price = {products.price}/>;
+              return (
+                <OrderPreview
+                  name={products.name}
+                  count={products.count}
+                  price={products.price}
+                />
+              );
             })}
-        </div>
-        <div className="buttons-section">
-          <button
-            className="cancel-button"
-            onClick={() => props.showConfirmRequest(false)}
-          >
-            cancelar
-          </button>
-          <button className="confirm-button" onClick={() => onClickHandler()}>
-            Confimar
-          </button>
+          </div>
+          <div className="buttons-section">
+            <button
+              className="cancel-button"
+              onClick={() => props.showConfirmRequest(false)}
+            >
+              cancelar
+            </button>
+            <button className="confirm-button" onClick={() => onClickHandler()}>
+              Confimar
+            </button>
+          </div>
         </div>
       </div>
     </div>
