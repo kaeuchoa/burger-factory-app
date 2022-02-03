@@ -29,7 +29,7 @@ const App = (props) => {
             showBill={setShowBill}
             setTotal ={setTotal}
           />
-          <BillPage totalOrder={total}trigger={showBill} showBill={setShowBill} />
+          <BillPage total={total}trigger={showBill} showBill={setShowBill} />
         </OrderDetailsProvider>
       </main>
     </div>

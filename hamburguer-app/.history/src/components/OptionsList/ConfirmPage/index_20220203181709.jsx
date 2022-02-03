@@ -10,13 +10,14 @@ const ConfirmPage = (props) => {
 
   const onClickHandler = (e) => {
     orderService.save(productsCount).then((data) => {
-     props.setTotal(data); // fazer uma confimação
+      console.log(data); // fazer uma confimação
     });
   };
   const ifConfirm = () =>{
     onClickHandler()
     props.showConfirmRequest(false)
     props.showBill(true)
+    
   }
   return props.trigger ? (
     <div className="confirm-popup">

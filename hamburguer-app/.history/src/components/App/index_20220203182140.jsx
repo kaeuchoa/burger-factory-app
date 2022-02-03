@@ -11,7 +11,7 @@ import { OrderDetailsProvider } from "../../context/OrderDetails";
 const App = (props) => {
   const [showConfirmPage, setShowConfirmPage] = useState(false);
   const [showBill, setShowBill] = useState(false);
-  const [total, setTotal] = useState({})
+  const [total, setTotal] = useState([])
   return (
     <div>
       <Header />
@@ -29,7 +29,7 @@ const App = (props) => {
             showBill={setShowBill}
             setTotal ={setTotal}
           />
-          <BillPage totalOrder={total}trigger={showBill} showBill={setShowBill} />
+          <BillPage trigger={showBill} showBill={setShowBill} />
         </OrderDetailsProvider>
       </main>
     </div>
