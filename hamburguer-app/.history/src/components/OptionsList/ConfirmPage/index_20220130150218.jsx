@@ -1,18 +1,16 @@
 import React, { useEffect, useContext } from "react";
 import { OrderDetails } from "../../../context/OrderDetails";
 import OrderPreview from "./OrderPreview";
+import Order
 import "./index.css";
 
 const ConfirmPage = (props) => {
   const { _, __, productsCount } = useContext(OrderDetails);
+  const orderService = new OrderService()
   
   const onClickHandler = (e) => {
-    fetch("http://localhost:3000/finishOrder", {
-      method: "POST",
-      headers: { "Content-type": "application/json" },
-      body: JSON.stringify(productsCount),
-    }).then(() => {
-      console.log(productsCount); //Pedido finalizado
+    orderService.save(productsCount).then((data) => {
+      console.log(data)
     });
 
     // criar um serviço novo
@@ -27,8 +25,7 @@ const ConfirmPage = (props) => {
       <div className="confirm-section">
         <div className="order-section">
             {productsCount.map((products) => {
-              // console.log(products)
-              return <OrderPreview name={products.name} count={products.count} price = {products.price}/>;
+              return <OrderPreview name={products.name} count={products.count} price = {products.price} key={products.id}/>
             })}
         </div>
         <div className="buttons-section">

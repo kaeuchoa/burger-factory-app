@@ -1,0 +1,38 @@
+.container{
+    .containerBox{
+        height: 380px;
+        width: 50%;
+        margin: 11em 5em;
+        position: absolute;
+        overflow: scroll;
+        overflow-x: hidden;
+        .chooseContainer{
+            
+            background-color: #ECE8FF;
+            width: 50%; 
+            border-radius: 1em;
+        }  
+    }
+    .sendButton{
+        position: fixed;
+        padding-top: 5em;
+        background-color: #ECE8FF;
+        color: #707070;
+        border: none;
+        border-radius: 1em;
+        font-size: 1.5em;
+        font-weight: 300;
+        margin-top:.8em;
+        padding: .2em 1em;
+        cursor: pointer;
+        transition: ease .2s;        
+    }
+    .sendButton:hover{
+        background-color: #CCCCCC;
+    }
+    .sendButton:active{
+        background-color: #959595;
+    }
+}
+
+    

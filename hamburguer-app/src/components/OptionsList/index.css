@@ -3,33 +3,35 @@
   width: 50%;
   margin: 11em 5em;
   position: absolute;
-  overflow: scroll;
-  overflow-x: hidden;
 }
 
 .container .containerBox .chooseContainer {
-  background-color: #ECE8FF;
+  overflow: visible;
+  overflow-x: hidden;
+  height: 270px;
+  background-color: #ece8ff;
   width: 50%;
   border-radius: 1em;
 }
 
 .container .sendButton {
+  position: fixed;
   padding-top: 5em;
-  background-color: #ECE8FF;
+  background-color: #ece8ff;
   color: #707070;
   border: none;
   border-radius: 1em;
   font-size: 1.5em;
   font-weight: 300;
-  margin-top: .8em;
-  padding: .2em 1em;
+  margin-top: 0.8em;
+  padding: 0.2em 1em;
   cursor: pointer;
-  -webkit-transition: ease .2s;
-  transition: ease .2s;
+  -webkit-transition: ease 0.2s;
+  transition: ease 0.2s;
 }
 
 .container .sendButton:hover {
-  background-color: #CCCCCC;
+  background-color: #cccccc;
 }
 
 .container .sendButton:active {
