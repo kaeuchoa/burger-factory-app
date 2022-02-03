@@ -41,7 +41,7 @@ const ConfirmPage = (props) => {
           >
             cancelar
           </button>
-          <button className="confirm-button" onClick={() => ifConfirm()}>
+          <button className="confirm-button" onClick={() => onClicifkHandler()}>
             Confimar
           </button>
         </div>

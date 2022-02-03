@@ -28,7 +28,7 @@ const App = (props) => {
             showConfirmRequest={setShowConfirmPage}
             showBill={setShowBill}
           />
-          <BillPage trigger={showBill} showBill={setShowBill} />
+          <BillPage trigger={showBill} showBill={} />
         </OrderDetailsProvider>
       </main>
     </div>

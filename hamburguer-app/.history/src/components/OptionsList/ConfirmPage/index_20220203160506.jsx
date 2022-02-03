@@ -13,11 +13,8 @@ const ConfirmPage = (props) => {
       console.log(data); // fazer uma confimação
     });
   };
-  const ifConfirm = () =>{
-    onClickHandler()
-    props.showConfirmRequest(false)
-    props.showBill(true)
-    return
+  const ifConfirm = () ={
+    
   }
   return props.trigger ? (
     <div className="confirm-popup">
@@ -41,7 +38,7 @@ const ConfirmPage = (props) => {
           >
             cancelar
           </button>
-          <button className="confirm-button" onClick={() => ifConfirm()}>
+          <button className="confirm-button" onClick={() => onClickHandler()}>
             Confimar
           </button>
         </div>

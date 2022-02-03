@@ -10,8 +10,7 @@ import { OrderDetailsProvider } from "../../context/OrderDetails";
 // npx json-server --watch db.json
 const App = (props) => {
   const [showConfirmPage, setShowConfirmPage] = useState(false);
-  const [showBill, setShowBill] = useState(false);
-
+  const [show]
   return (
     <div>
       <Header />
@@ -26,9 +25,8 @@ const App = (props) => {
           <ConfirmPage
             trigger={showConfirmPage}
             showConfirmRequest={setShowConfirmPage}
-            showBill={setShowBill}
           />
-          <BillPage trigger={showBill} showBill={setShowBill} />
+          <BillPage/>
         </OrderDetailsProvider>
       </main>
     </div>
