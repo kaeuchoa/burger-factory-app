@@ -1,0 +1,51 @@
+.BillPage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .Billbox{
+        height: 90vh;
+        background-color: #ECE8FF;
+        border-radius: 1em;
+        padding: 20px;
+        color: #424242;
+        .bills-section{
+            margin: 10px;
+        }
+       .ClosePage{
+           color: #8e8d92;
+           border-radius: .4em ;
+           border: solid;
+           border-width: 2px;
+           border-color:#d2d0d8 ;
+           font-size: 25px;
+           font-weight: bold;
+           justify-content: right;
+           cursor: pointer;
+       }
+       .ClosePage:hover{
+           background-color: #c3c3c3;
+           color:#424242;
+           border-color: #c3c3c3;
+           transition: .2s;
+       }
+       .makeNewOrder{
+        margin: 0 40px 0px 40px;
+        padding: 10px;
+        background-color: #c9c8ca;
+        color: #3f3e3e;
+        border: none;
+        border-radius: 0.8em;
+        font-size: 22px;
+        font-weight: 300;
+        cursor: pointer;
+        transition: ease 0.2s;
+       }
+    }
+}

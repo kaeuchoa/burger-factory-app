@@ -1,7 +1,63 @@
 .BillPage {
   position: absolute;
-  background-color: blue;
-  width: 400px;
-  height: 600px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.BillPage .Billbox {
+  height: 90vh;
+  width: 700px;
+  background-color: #ece8ff;
+  border-radius: 1em;
+  padding: 20px;
+  color: #424242;
+}
+
+.BillPage .Billbox .bills-section {
+  margin-top: 20px;
+  margin: 10px;
+  height: 65%;
+  width: 100%;
+  overflow: visible;
+  overflow-x: hidden;
+}
+
+.BillPage .Billbox .totalBill {
+  margin: 20px 25px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.BillPage .Billbox .makeNewOrder {
+  position: fixed;
+  margin: 0 40px 0px 40px;
+  padding: 5px 10px;
+  background-color: #ebeb5c;
+  color: #3f3e3e;
+  border: none;
+  border-radius: 0.8em;
+  font-size: 22px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.BillPage .Billbox .makeNewOrder:hover {
+  background-color: #f1f129;
+  color: #424242;
+  border-color: #c3c3c3;
+  -webkit-transition: ease 0.2s;
+  transition: ease 0.2s;
 }
 /*# sourceMappingURL=index.css.map */
