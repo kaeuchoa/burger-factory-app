@@ -7,6 +7,7 @@ const BillPage = (props) => {
   const { _, __, productsCount } = useContext(OrderDetails);
   const deleteOrder = () => {
     props.showBill(false)
+    var x = 4;
     while (productsCount.length > 0) {
       productsCount.pop();
     }

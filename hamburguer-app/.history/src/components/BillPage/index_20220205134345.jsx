@@ -5,12 +5,14 @@ import "./index.css";
 
 const BillPage = (props) => {
   const { _, __, productsCount } = useContext(OrderDetails);
+  //todas as informações do pedido estão em productsCount, preciso zerar esse array
   const deleteOrder = () => {
-    props.showBill(false)
-    while (productsCount.length > 0) {
+    console.log(productsCount.lenth
+    while (productsCount.lenth > 0) {
       productsCount.pop();
     }
     console.log(productsCount);
+    return productsCount;
   };
   return props.trigger ? (
     <div className="BillPage">
@@ -29,7 +31,7 @@ const BillPage = (props) => {
           })}
         </div>
         <div className="totalBill">Total: {props.totalOrder.total}R$</div>
-        <button className="makeNewOrder"  onClick={() => deleteOrder() }>
+        <button className="makeNewOrder" onClick={() => deleteOrder()}>
           Fazer novo Pedido
         </button>
       </div>

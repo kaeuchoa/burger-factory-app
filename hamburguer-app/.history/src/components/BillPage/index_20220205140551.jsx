@@ -5,9 +5,12 @@ import "./index.css";
 
 const BillPage = (props) => {
   const { _, __, productsCount } = useContext(OrderDetails);
+  console.
   const deleteOrder = () => {
     props.showBill(false)
-    while (productsCount.length > 0) {
+    var x = 4;
+    while (x > 0) {
+      x = x - 1;
       productsCount.pop();
     }
     console.log(productsCount);

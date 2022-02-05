@@ -1,17 +1,12 @@
 import React, { useContext } from "react";
 import { OrderDetails } from "../../context/OrderDetails";
 import OrderPreview from "../OptionsList/ConfirmPage/OrderPreview";
+import DeleteOrder from '../../services/DeleteOrder'
 import "./index.css";
 
 const BillPage = (props) => {
   const { _, __, productsCount } = useContext(OrderDetails);
-  const deleteOrder = () => {
-    props.showBill(false)
-    while (productsCount.length > 0) {
-      productsCount.pop();
-    }
-    console.log(productsCount);
-  };
+
   return props.trigger ? (
     <div className="BillPage">
       <div className="Billbox">
@@ -29,7 +24,7 @@ const BillPage = (props) => {
           })}
         </div>
         <div className="totalBill">Total: {props.totalOrder.total}R$</div>
-        <button className="makeNewOrder"  onClick={() => deleteOrder() }>
+        <button className="makeNewOrder" onClick={() => props.showBill(false)}>
           Fazer novo Pedido
         </button>
       </div>

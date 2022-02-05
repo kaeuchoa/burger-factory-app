@@ -5,8 +5,10 @@ import "./index.css";
 
 const BillPage = (props) => {
   const { _, __, productsCount } = useContext(OrderDetails);
+  console.log(productsCount.length)
   const deleteOrder = () => {
     props.showBill(false)
+    var x = 4;
     while (productsCount.length > 0) {
       productsCount.pop();
     }

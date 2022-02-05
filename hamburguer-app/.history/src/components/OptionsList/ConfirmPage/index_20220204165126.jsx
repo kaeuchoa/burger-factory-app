@@ -10,7 +10,6 @@ const ConfirmPage = (props) => {
 
   const onClickHandler = (e) => {
     orderService.save(productsCount).then((data) => {
-      console.log(data)
       props.showConfirmRequest(false)
       props.showBill(true)
      props.setTotal(data); // fazer uma confimação

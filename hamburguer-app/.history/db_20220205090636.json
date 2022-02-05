@@ -98,6 +98,19 @@
     }
   ],
   "finishOrder": [
-    
+    [
+      {
+        "id": 1,
+        "count": 1,
+        "name": "Bolvino",
+        "price": 5
+      },
+      {
+        "id": 2,
+        "count": 1,
+        "name": "Vegetariano",
+        "price": 7.5
+      }
+    ]
   ]
-} 
+}
